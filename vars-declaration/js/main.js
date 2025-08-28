@@ -1,4 +1,4 @@
-const CURRENT_YEAR = 2025;
+const CURRENT_YEAR = new Date().getFullYear();
 const main_section = document.querySelector("main");
 const heading = document.createElement("h2");
 const subheading = document.createElement("h3");
