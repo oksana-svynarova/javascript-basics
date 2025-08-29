@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  min-height: 100vh;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #edf6f7;
+  background: linear-gradient(45deg, #7d8e94, #0c3446);
+}
+
+.header,
+.main,
+.footer {
+  padding: 0 calc(50vw - 585px);
+}
+@media screen and (max-width: 1200px) {
+  .header,
+  .main,
+  .footer {
+    padding: 0 calc(50vw - (585px - 12%));
+  }
+}
+@media screen and (max-width: 992px) {
+  .header,
+  .main,
+  .footer {
+    padding: 0 calc(50vw - (585px - 27%));
+  }
+}
+@media screen and (max-width: 768px) {
+  .header,
+  .main,
+  .footer {
+    padding: 0 15px;
+  }
+}
+
+.header, .footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #f1a1cd;
+}
+
+.main {
+  margin: 50px 0;
+}
+
+.item {
+  border: 1px solid #f1a1cd;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin-top: 15px;
+}
+
+.input {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: #f1a1cd;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  max-width: 100px;
+  padding-left: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+span {
+  color: #f1a1cd;
+}
+
+.footer {
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */

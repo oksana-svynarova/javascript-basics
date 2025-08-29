@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic JavaScript</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="title-1">Basic JavaScript</h1>
+  </header>
+  <main class="main">
+    <form action="GET">
+      <ul class="list">
+        <li class="item">
+          <label class="label">
+            Enter your flash drive capacity (GB):
+            <input id="flashCapacity" type="number" min="0" class="input">
+          </label>
+          <h4>Number of 820 MB files that can fit on the flash drive: <span id="filesNumber"></span></h4>
+        </li>
+        <li class="item">
+          <label class="label">
+            Enter the amount of money in your wallet:
+            <input id="moneyAmount" type="number" min="0" class="input">
+          </label>
+          <label class="label">
+            Enter the price of one chocolate bar:
+            <input id="chocolatePrise" type="number" min="0" class="input">
+          </label>
+          <h4>Number of chocolate bars you can buy: <span id="chocolateNumber"></span></h4>
+          <h4>Remaining change: <span id="change"></span></h4>
+        </li>
+        <li class="item">
+          <label class="label">
+            Enter a three-digit number:
+            <input id="threeDigitNumber" type="number" min="0" class="input">
+          </label>
+          <h4>Reversed three-digit number: <span id="reversedNumber"></span></h4>
+        </li>
+        <li class="item">
+          <label class="label">
+            Enter the deposit amount for 2 months at an annual interest rate of 5%:
+            <input id="deposit" type="number" min="0" class="input">
+          </label>
+          <h4>Accrued interest: <span id="interest"></span></h4>
+        </li>
+      </ul>
+    </form>
+  </main>
+  <footer class="footer">
+    <p class="text">
+      &#169; 2025 All Rights Reserved.
+    </p>
+  </footer>
+  <script src="./js/main.js"></script>
+</body>
+</html>
