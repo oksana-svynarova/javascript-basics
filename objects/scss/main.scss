@@ -1,0 +1,112 @@
+@use "vars";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #edf6f7;
+  background: linear-gradient(45deg, #7d8e94, #0c3446);
+}
+
+.header,
+.main,
+.footer {
+  padding: 0 calc(50vw - vars.$half-container-width);
+    @media screen and (max-width: 1200px) {
+        padding: 0 calc(50vw - calc(vars.$half-container-width - 12%));
+    }
+    @media screen and (max-width: 992px) {
+        padding: 0 calc(50vw - calc(vars.$half-container-width - 27%));
+    }
+    @media screen and (max-width: 768px) {
+        padding: 0 15px;
+    }
+}
+
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #f1a1cd;
+}
+
+.main {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 100%;
+  backdrop-filter: blur(15px);
+  box-shadow: 10px 8px 32px rgba(241,161,205,0.5),
+              20px 12px 48px rgba(0,0,0,0.8);
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+h4 {
+  margin-bottom: 20px;
+  height: 40px;
+}
+
+.wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.wrapper > div {
+  flex: 1;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input[type="text"] {
+  max-width: 300px;
+  margin-top: 15px;
+}
+
+.input {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: #f1a1cd;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  max-width: 100px;
+  padding-left: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+span {
+  color: #f1a1cd;
+}
+
+.footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: #f1a1cd;
+}
