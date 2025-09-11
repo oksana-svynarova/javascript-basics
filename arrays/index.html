@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic JavaScript</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="title-1">Basic JavaScript</h1>
+  </header>
+  <main class="main">
+    <section class="section">
+      <h2>Shopping list:</h2>
+      <ol id="shoppingList">
+      </ol>
+      <div>
+        <label class="label">
+          Enter the product name to set it as bought:
+          <input type="text" id="purchasedProduct" class="input" placeholder="milk">
+        </label>
+      </div>
+      <div>
+        <label class="label">
+          Enter the product name to delete from the list:
+          <input type="text" id="deletedProduct" class="input" placeholder="milk">
+        </label>
+      </div>
+      <div>
+        <label class="label">
+          Enter the product name to add to the list:
+          <input type="text" id="addProductName" class="input" placeholder="whiskey">
+        </label>
+        <label class="label">
+          Amount:
+          <input type="number" id="addProductAmount" class="input" min="1" placeholder="1">
+        </label>
+        <label class="label">
+          Price:
+          <input type="number" id="addProductPrice" class="input" min="1" placeholder="41700">
+        </label>
+        <button id="btn">Add</button>
+      </div>
+  </main>
+  <footer class="footer">
+    <p class="text">
+      &#169; 2025 All Rights Reserved.
+    </p>
+  </footer>
+  <script src="./js/arrays.js"></script>
+</body>
+</html>
