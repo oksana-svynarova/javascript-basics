@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic JavaScript</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="title-1">Basic JavaScript</h1>
+  </header>
+  <main class="main">
+    <section class="section">
+      <h2>
+        Beetroot play list:
+      </h2>
+      <ol id="playList"></ol>
+    </section>
+    <section class="section">
+      <button class="btn" id="openModal">Click on me!</button>
+    </section>
+    <section class="section">
+      <h2>Traffic light</h2>
+        <div class="container">
+          <div class="circle red" color="red"></div>
+          <div class="circle" color="yellow"></div>
+          <div class="circle" color="green"></div>
+        </div>
+        <button class="btn" id="changeColor">Next color</button>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="text">
+      &#169; 2025 All Rights Reserved.
+    </p>
+  </footer>
+  <div class="modal" id="modal">
+    <div class="modal-inner">
+      <h4 class="modal-title">Well done, Ivan Vasylenko!</h4>
+      <p class="modal-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Amet similique deleniti sapiente explicabo distinctio?
+      </p>
+      <button class="btn" id="closeModal">Close</button>
+    </div>
+  </div>
+  <script src="./js/dom.js"></script>
+</body>
+</html>
